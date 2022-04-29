@@ -7,6 +7,7 @@ export const Container = styled.div`
 export const Title = styled.h2`
   color: #3D3D3D;
   font-size: 18px;
+  cursor: pointer;
 `
 
 export const Content = styled.p`
