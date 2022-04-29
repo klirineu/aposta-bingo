@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  
+  min-width: 1200px;
   padding: 40px;
   display: flex;
   flex-direction: row;
@@ -12,6 +12,7 @@ export const TextHeader = styled.strong`
   margin-left: 20px;
   font-size: 20px;
   font-weight: bold;
+  cursor: pointer;
 `
 export const ButtonHeader = styled.button`
   border: none;

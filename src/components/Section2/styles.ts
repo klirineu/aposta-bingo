@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +17,7 @@ export const DivRow = styled.div`
 `
 
 export const Number = styled.h2`
-  color: #4FD787;
+  color: var(--green);
   font-size: 40px;
   margin-top: 12px;
   margin-right: 20px;
@@ -43,11 +43,23 @@ export const Title = styled.h2`
 `
 
 export const TitleGreen = styled.h2`
-  color: #4FD787;
+  color: var(--green);
 `
 
 export const ImageLeft = styled.img`
   width: 400px;
   height: 500px;
   background-size: contain;
+`
+
+export const Button = styled.button`
+  margin-top: 100px;
+  border: none;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background: #4FD787;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
 `

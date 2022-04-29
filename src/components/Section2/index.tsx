@@ -1,8 +1,11 @@
-import {Container, DivRow, Number, Img, Text, Title, TitleGreen, ImageLeft,} from './styles'
+import {Container, DivRow, Number, Img, Text, Title, TitleGreen, ImageLeft, Button,} from './styles'
 import CartIcon from '../../assets/cart-plus.png'
 import CashIcon from '../../assets/cash-stack.png'
 import CalendarIcon from '../../assets/calendar-check.png'
 import VerificadoImg from '../../assets/verificado.png'
+import { FaqList } from '../Faq'
+
+import chatTextFillIcon from "../../assets/chat-text-fill.png"
 
 export function Section2() {
   return (
@@ -46,6 +49,8 @@ export function Section2() {
             AMIGOS.BET 
             É <TitleGreen>FÁCIL</TitleGreen>
           </Title>
+          <FaqList />
+          <Button> <img src={chatTextFillIcon} alt="" style={{width: 25, marginRight: 20, marginBottom: -5}}/>Ainda tem dúvidas ? fale conosco agora mesmo</Button>
         </div>
         <div>
           <ImageLeft src={VerificadoImg}/>
