@@ -1,61 +1,64 @@
-import {Container, DivRow, Number, Img, Text, Title, TitleGreen, ImageLeft, Button,} from './styles'
-import CartIcon from '../../assets/cart-plus.png'
-import CashIcon from '../../assets/cash-stack.png'
-import CalendarIcon from '../../assets/calendar-check.png'
-import VerificadoImg from '../../assets/verificado.png'
-import { FaqList } from '../Faq'
+import {
+  Container,
+  DivRow,
+  Number,
+  Img,
+  Text,
+  Title,
+  TitleGreen,
+  ImageLeft,
+  Button,
+} from "./styles";
 
-import chatTextFillIcon from "../../assets/chat-text-fill.png"
+import { FaqList } from "../Faq";
 
 export function Section2() {
   return (
     <Container>
-      <DivRow style={{justifyContent: 'space-between'}}>
-        <div style={{textAlign: 'center', width: 250}}>
+      <DivRow style={{ justifyContent: "space-between" }}>
+        <div style={{ textAlign: "center", width: 250 }}>
           <DivRow>
             <Number>1.</Number>
-            <Img src={CartIcon}/>
+            <Img src='/assets/cart-plus.png' />
           </DivRow>
-          <Text>
-            ADICIONE SUAS APOSTAS 
-            AO CARRINHO
-          </Text>
+          <Text>ADICIONE SUAS APOSTAS AO CARRINHO</Text>
         </div>
-        <div style={{textAlign: 'center', width: 250}}>
+        <div style={{ textAlign: "center", width: 250 }}>
           <DivRow>
             <Number>2.</Number>
-            <Img src={CashIcon}/>
+            <Img src='/assets/cash-stack.png' />
           </DivRow>
-          <Text>
-            ADICIONE SUAS APOSTAS 
-            AO CARRINHO
-          </Text>
+          <Text>ADICIONE SUAS APOSTAS AO CARRINHO</Text>
         </div>
-        <div style={{textAlign: 'center', width: 250}}>
+        <div style={{ textAlign: "center", width: 250 }}>
           <DivRow>
             <Number>3.</Number>
-            <Img src={CalendarIcon}/>
+            <Img src='/assets/calendar-check.png' />
           </DivRow>
-          <Text>
-            ADICIONE SUAS APOSTAS 
-            AO CARRINHO
-          </Text>
+          <Text>ADICIONE SUAS APOSTAS AO CARRINHO</Text>
         </div>
       </DivRow>
-      <DivRow style={{justifyContent: 'space-between', marginTop: 80}}>
+      <DivRow style={{ justifyContent: "space-between", marginTop: 80 }}>
         <div>
           <Title>
-            APOSTAR NO <br/>
-            AMIGOS.BET 
-            É <TitleGreen>FÁCIL</TitleGreen>
+            APOSTAR NO <br />
+            AMIGOS.BET É <TitleGreen>FÁCIL</TitleGreen>
           </Title>
           <FaqList />
-          <Button> <img src={chatTextFillIcon} alt="" style={{width: 25, marginRight: 20, marginBottom: -5}}/>Ainda tem dúvidas ? fale conosco agora mesmo</Button>
+          <Button>
+            {" "}
+            <img
+              src='/assets/chat-text-fill.png'
+              alt=''
+              style={{ width: 25, marginRight: 20, marginBottom: -5 }}
+            />
+            Ainda tem dúvidas ? fale conosco agora mesmo
+          </Button>
         </div>
         <div>
-          <ImageLeft src={VerificadoImg}/>
+          <ImageLeft src='/assets/verificado.png' />
         </div>
       </DivRow>
     </Container>
-  )
+  );
 }
