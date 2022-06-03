@@ -1,4 +1,5 @@
 import { Container, TextHeader, ButtonHeader, LogoHeader } from "./styles";
+import Link from "next/link"
 
 export function Header() {
   return (
@@ -11,16 +12,11 @@ export function Header() {
         <TextHeader>Resultados</TextHeader>
       </div>
       <div>
-        <ButtonHeader>Cadastre-se</ButtonHeader>
-        <ButtonHeader
-          style={{
-            background: "transparent",
-            border: "1px solid #40E550",
-            color: "#40E550",
-          }}
-        >
-          Login
-        </ButtonHeader>
+        <Link href="/jogo">
+          <ButtonHeader>
+            Comprar bilhete
+          </ButtonHeader>
+        </Link>
       </div>
     </Container>
   );

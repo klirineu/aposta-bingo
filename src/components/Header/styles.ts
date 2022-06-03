@@ -15,15 +15,21 @@ export const TextHeader = styled.strong`
   cursor: pointer;
 `
 export const ButtonHeader = styled.button`
-  border: none;
-  width: 150px;
+  width: 180px;
   height: 37px;
   border-radius: 50px;
-  background: var(--green);
+  background: transparent;
+  border: 1px solid #40E550;
+  color: #40E550;
   margin-left: 20px;
   font-size: 20px;
-  color: white;
   font-weight: bold;
+
+  &:hover{
+    border: none;
+    background: var(--green);
+    color: white;
+  }
 `
 
 export const LogoHeader = styled.img`
