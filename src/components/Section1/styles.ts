@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   background-color: var(--green-background);
-  min-width: 1450px;
-
+  min-width: 1250px;
 `
 
 export const Text = styled.h2`
@@ -30,5 +29,5 @@ export const CardImg = styled.img`
   width: 220px;
   height: 220px;
   margin-top: 15px;
-  margin-left: 100px;
+  margin-left: 80px;
 `

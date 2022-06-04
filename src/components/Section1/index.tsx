@@ -16,10 +16,9 @@ export function Section1() {
         <Image
           style={{
             backgroundSize: "cover",
-            marginTop: -162,
             height: 400,
             width: 650,
-            marginLeft: -40,
+            marginLeft: -120,
           }}
           src='/assets/MEGASENASEMFUNDO.png'
           alt='mega sena'

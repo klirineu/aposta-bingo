@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 60px;
   padding-left: 100px;
 `

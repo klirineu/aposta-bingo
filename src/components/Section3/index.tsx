@@ -12,11 +12,9 @@ import {
 export function Section3() {
   return (
     <Container>
-      <Text>Como começar a apostar</Text>
-      <Text>com o (Nome do negócio)</Text>
-      <Cards>
-        <Title>DÊ OS PRIMEIROS PASSOS E COMECE A APOSTAR AGORA MESMO:</Title>
-      </Cards>
+      <Text>Como começar a apostar <br /> com o (Nome do negócio) <Title style={{fontSize: 15, marginTop: 20}}>DÊ OS PRIMEIROS PASSOS E COMECE A APOSTAR AGORA MESMO:</Title></Text>
+      
+        
       <Cards>
         <Card>
           <CardNumber>1.</CardNumber>

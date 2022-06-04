@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: var(--green-background);
+  
 `
 
 export const Text = styled.h2`
@@ -11,15 +15,14 @@ export const Text = styled.h2`
   &:first-child {
     padding-top: 40px;
   }
-  padding-left: 40px;
   text-transform: uppercase;
 `
 
 export const Cards = styled.div`
   margin-top: 50px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 `
 
 export const Title = styled.h3`
