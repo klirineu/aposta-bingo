@@ -12,31 +12,31 @@ export function PagamentoComponent() {
     const [validationBilling, setBilling] = useState('');
     //  =====
 
-    const handleSubmit = event => {
-        event.preventDefault();
+    // const handleSubmit = event => {
+    //     event.preventDefault();
 
-        console.log(paymentCard);
-        console.log(numberCard);
-        console.log(expireDate);
-        console.log(securitycode);
-        console.log(Validation);
-        console.log(validationBilling);
-        console.log(paymentPix);
-        //  =====
-        setPaymentCard('');
-        setPaymentPix('');
-        setNumberCard('');
-        setExpireDate('');
-        setsecuritycode('');
-        setValidation('');
-        setBilling('');
+    //     console.log(paymentCard);
+    //     console.log(numberCard);
+    //     console.log(expireDate);
+    //     console.log(securitycode);
+    //     console.log(Validation);
+    //     console.log(validationBilling);
+    //     console.log(paymentPix);
+    //     //  =====
+    //     setPaymentCard('');
+    //     setPaymentPix('');
+    //     setNumberCard('');
+    //     setExpireDate('');
+    //     setsecuritycode('');
+    //     setValidation('');
+    //     setBilling('');
 
-    };
+    // };
     return (
         <>
             <Title>pagamento</Title>
             <ContainerForm>
-                <form onSubmit={handleSubmit}>
+                <form>
                     <div className="check__item">
                     <input
                         type="radio"
