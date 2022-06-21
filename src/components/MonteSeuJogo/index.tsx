@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiFillSignal } from "react-icons/ai";
-
+import Link from "next/link"
 
 export function MonteSeuJogo() {
   const [numberSelected, setNumberSelected] = useState<string[]>([])
@@ -240,9 +240,11 @@ export function MonteSeuJogo() {
                         <p>mínimo de dezenas: <span>06</span></p>
                         <p>dezenas selecionadas: <span>{numberSelected.length}</span></p>
                     </div>
-                    <button type="button">
-                        <a href="/" className="add_cart">adicionar ao carrinho</a>
-                    </button>
+                    <Link href="/pagamento">
+                      <button type="button">
+                        <strong className="add_cart">adicionar ao carrinho</strong>
+                      </button>
+                    </Link>
                 </div>
 
             </section>
